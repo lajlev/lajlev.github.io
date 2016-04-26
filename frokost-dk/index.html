@@ -44,9 +44,11 @@ function requestCrossDomain( site, callback ) {
     }
 }
 
-requestCrossDomain('http://www.cnn.com', function(results) {
-  $('#container').html(results);
-});
+$(function(){
+  requestCrossDomain('http://www.cnn.com', function(results) {
+    $('#container').html(results);
+  });
+})
 </script>
   
 </body>
